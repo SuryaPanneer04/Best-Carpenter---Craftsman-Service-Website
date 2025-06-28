@@ -85,6 +85,7 @@
                 <a href="index.html" class="nav-item nav-link">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <a href="service.html" class="nav-item nav-link">Service</a>
+                <a href="ourWorks.html" class="nav-item nav-link">OurWorks</a>
                 <!-- <a href="project.html" class="nav-item nav-link">Project</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -98,7 +99,7 @@
                 </div> -->
                 <a href="contact.html" class="nav-item nav-link active">Contact</a>
             </div>
-            <a href="" class="btn btn-warning py-4 px-lg-5 d-none d-lg-block">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a>
+            <!-- <a href="" class="btn btn-warning py-4 px-lg-5 d-none d-lg-block">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a> -->
         </div>
     </nav>
     <!-- Navbar End -->
@@ -130,7 +131,7 @@
                             <h1 class="display-5 mb-4">Contact Us</h1>
                         </div>
                         <p class="mb-4">What you need ?</p>
-                        <form>
+                        <form id="contact-form"> 
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
@@ -175,6 +176,26 @@
         </div>
     </div>
     <!-- Contact End -->
+
+
+     <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    Email.send({
+      SecureToken: "YOUR_SECURE_TOKEN", // Get this from smtpjs.com
+      To: "your_email@example.com",
+      From: document.getElementById("email").value,
+      Subject: "New Contact Form Message",
+      Body: `
+        <b>Name:</b> ${document.getElementById("name").value}<br/>
+        <b>Email:</b> ${document.getElementById("email").value}<br/>
+        <b>Message:</b> ${document.getElementById("message").value}
+      `
+    }).then(message => alert("Mail sent successfully!"));
+  });
+</script> -->
 
 
     <!-- Footer Start -->
