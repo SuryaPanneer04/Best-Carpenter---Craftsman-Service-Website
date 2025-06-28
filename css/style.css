@@ -637,3 +637,40 @@
 .footer .copyright a:hover {
     color: var(--primary);
 }
+
+/* useing switch the language and dark mode */
+/* .hidden {
+    display: none !important;
+} */
+
+
+/* body */
+
+/* === Dark Mode === */
+/* body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .bg-light {
+    background-color: #1e1e1e !important;
+}
+
+body.dark-mode .text-dark {
+    color: #f1f1f1 !important;
+}
+
+body.dark-mode .btn-primary {
+    background-color: #FDBF07;
+    color: #000;
+}
+
+body.dark-mode .section-title h1::before,
+body.dark-mode .section-title h1::after {
+    background: #f1f1f1;
+} */
+
+/* Optional: invert logo or images */
+/* body.dark-mode img {
+    filter: brightness(0.9) contrast(1.1);
+} */
