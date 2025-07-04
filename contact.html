@@ -84,7 +84,7 @@
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Service</a>
+                <a href="message.html" class="nav-item nav-link">message</a>
                 <a href="ourWorks.html" class="nav-item nav-link">OurWorks</a>
                 <a href="catalogue.html" class="nav-item nav-link">Catalogue</a>
                 <!-- <a href="project.html" class="nav-item nav-link">Project</a>
@@ -177,7 +177,25 @@
         </div>
     </div>
     <!-- Contact End -->
+    
+    <!-- WhatsApp Script -->
+<script>
+    document.querySelector("form").addEventListener("submit", function(e) {
+        e.preventDefault(); // prevent actual form submission
 
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const subject = document.getElementById("subject").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        const data = `*Booking Request from Website*%0A%0A👤 *Name:* ${name}%0A📧 *Email:* ${email}%0A *subject:* ${subject}%0A *message:* ${message}%0A`;
+
+        // Replace with your WhatsApp number in international format (without +)
+        const whatsappNumber = "98426 83827";
+
+        window.open(`https://wa.me/${whatsappNumber}?text=${data}`, '_blank');
+    });
+</script>
 
      <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
@@ -207,7 +225,7 @@
                     <h4 class="text-info mb-4">Address</h4>
                     <a href="https://www.google.com/maps/place/https://www.google.com/maps/dir//Karthika+Woodworks,+No:217,+Kannappa+Nagar+,+S.P+Kannuchamy+Street,+PO,+Rathinapuri,+Coimbatore,+Tamil+Nadu+641027/@11.0362035,76.9167203,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba85969244a4f0f:0x77ee40db76d790e4!2m2!1d76.9548291!2d11.0362035?entry=ttu&g_ep=EgoyMDI1MDYyMy4yIKXMDSoASAFQAw%3D%3D/@LAT,LONG,17z" target="_blank" style="color:white;"><p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>No:217, Kannappa Nagar, Coimbatore, Tamil Nadu 641027</p></a>
                     <a href="tel:+9198426 83827" style="color: white;"><p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 98426 83827</p></a>
-                    <a href="mailto:karthikawoodworks217@gmail.com?subject=Woodwork%20Enquiry&body=Hello%2C%20I%20am%20interested%20in%20your%20services." style="color: white;"><p class="mb-2"><i class="fa fa-envelope me-3"></i>karthikawoodworks217@gmail.com</p></a>
+                    <a href="mailto:karthikawoodworks217@gmail.com?subject=Woodwork%20Enquiry&body=Hello%2C%20I%20am%20interested%20in%20your%20messages." style="color: white;"><p class="mb-2"><i class="fa fa-envelope me-3"></i>karthikawoodworks217@gmail.com</p></a>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/channel/UC9HlQRmKgG3jeVD_fBxj1Pw/videos"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/FreeWebsiteCode/"><i class="fab fa-facebook-f"></i></a>
@@ -216,7 +234,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-info mb-4">Services</h4>
+                    <h4 class="text-info mb-4">messages</h4>
                     <a class="btn btn-link" href="">General Carpentry and Custom</a>
                     <a class="btn btn-link" href="">Furniture Remodeling</a>
                     <a class="btn btn-link" href="">Wooden Floor</a>
@@ -228,7 +246,7 @@
                     <a class="btn btn-link" href="">BuildingWooden Frameworks</a>
                 </div>
                  <!-- <div class="col-lg-3 col-md-6">
-                    <h4 class="text-info mb-4">Services</h4>
+                    <h4 class="text-info mb-4">messages</h4>
                     <a class="btn btn-link" href="">Cabinets Making</a>
                     <a class="btn btn-link" href="">BuildingWooden Frameworks</a>
                     <a class="btn btn-link" href="">Repairing Structures</a>
@@ -239,7 +257,7 @@
                     <h4 class="text-info mb-4">Quick Links</h4>
                     <a class="btn btn-link" href="about.html">About Us</a>
                     <a class="btn btn-link" href="contact.html">Contact Us</a>
-                    <a class="btn btn-link" href="service.html">Our Services</a>
+                    <a class="btn btn-link" href="message.html">Our messages</a>
                     <a class="btn btn-link" href="catalogue.html">Catalogue</a>
                     <!-- <a class="btn btn-link" href="">Terms & Condition</a>
                     <a class="btn btn-link" href="">Support</a> -->
